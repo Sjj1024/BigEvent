@@ -78,7 +78,8 @@ $(function () {
         $.ajax(settings).done(function (response) {
             if (response.status == 0) {
                 layer.msg('恭喜你登陆成功！');
-                localStorage.setItem("token", response.token)
+                localStorage.setItem("token", response.token);
+                location.href = "/back.html";
             } else {
                 layer.msg(response.message);
             }

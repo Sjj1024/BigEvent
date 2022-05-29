@@ -7,4 +7,23 @@ $.ajaxPrefilter(function (options) {
         "Authorization": localStorage.getItem("token") ? localStorage.getItem("token") : "",
         "Content-Type": "application/x-www-form-urlencoded"
     }
+    // 统一权限认证
+    options.complete = function (res) {
+        console.log(res);
+        // 判断访问后台时候是否存在token
+        var url = location.href;
+        console.log("正在访问的URL是：" + url);
+        if (!url.includes("login.html") && !localStorage.getItem("token")) {
+            location.href = "/login.html";
+        }
+    }
 });
+
+$(function () {
+    // 判断访问后台时候是否存在token
+    var url = location.href;
+    // console.log("正在访问的URL是：" + url);
+    if (!url.includes("login.html") && !localStorage.getItem("token")) {
+        location.href = "/login.html";
+    }
+})
