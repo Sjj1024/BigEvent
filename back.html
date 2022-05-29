@@ -40,22 +40,22 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <li class="layui-nav-item">
-                        <a href="javascript:;"> <i class="layui-icon layui-icon-home"></i>首页</a>
+                        <a href="./moduls/home.html" target="main"> <i class="layui-icon layui-icon-home"></i>首页</a>
                     </li>
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;">文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">文章类别</a></dd>
-                            <dd><a href="javascript:;">文章列表</a></dd>
-                            <dd><a href="javascript:;">发表文章</a></dd>
+                            <dd><a href="./moduls/category.html" target="main">文章类别</a></dd>
+                            <dd><a href="./moduls/articals.html" target="main">文章列表</a></dd>
+                            <dd><a href="./moduls/publish.html" target="main">发表文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;">个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">基本资料</a></dd>
-                            <dd><a href="javascript:;">更换头像</a></dd>
-                            <dd><a href="javascript:;">重置密码</a></dd>
+                            <dd><a href="./moduls/userinfo.html" target="main">基本资料</a></dd>
+                            <dd><a href="./moduls/editinfo.html" target="main">更换头像</a></dd>
+                            <dd><a href="./moduls/editpass.html" target="main">重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -64,7 +64,9 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <div style="padding: 15px;">内容主体区域。记得修改 layui.css 和 js 的路径</div>
+            <div style="padding: 15px;">
+                <iframe src="./moduls/home.html" frameborder="0" name="main"></iframe>
+            </div>
         </div>
 
         <div class="layui-footer">
