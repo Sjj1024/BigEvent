@@ -13,8 +13,8 @@ $.ajaxPrefilter(function (options) {
         // 判断访问后台时候是否存在token
         var url = location.href;
         console.log("正在访问的URL是：" + url);
-        if (!url.includes("login.html") && !localStorage.getItem("token")) {
-            location.href = "/login.html";
+        if (!url.includes("index.html") && !localStorage.getItem("token")) {
+            location.href = "/index.html";
         }
     }
 });
@@ -23,7 +23,7 @@ $(function () {
     // 判断访问后台时候是否存在token
     var url = location.href;
     // console.log("正在访问的URL是：" + url);
-    if (!url.includes("login.html") && !localStorage.getItem("token")) {
-        location.href = "/login.html";
+    if (!url.includes("index.html") && !localStorage.getItem("token")) {
+        location.href = "/index.html";
     }
 })

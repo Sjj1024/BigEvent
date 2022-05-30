@@ -10,7 +10,7 @@ $(function () {
     // 退出登录
     $(".quit").on("click", function (e) {
         localStorage.removeItem("token");
-        location.href = "/login.html";
+        location.href = "/index.html";
     })
 
     function getSome() {
