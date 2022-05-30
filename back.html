@@ -24,12 +24,12 @@
                     <a href="javascript:;">
                         <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
                             class="layui-nav-img">
-                        tester
+                        1024小神
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">Your Profile</a></dd>
-                        <dd><a href="">Settings</a></dd>
-                        <dd><a href="">Sign out</a></dd>
+                        <dd><a href="./moduls/userinfo.html" target="main">个人信息</a></dd>
+                        <dd><a href="./moduls/editinfo.html" target="main">修改资料</a></dd>
+                        <dd><a href="javascript:;" class="quit">退出登陆</a></dd>
                     </dl>
                 </li>
             </ul>
@@ -39,7 +39,7 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
-                    <li class="layui-nav-item">
+                    <li class="layui-nav-item layui-this">
                         <a href="./moduls/home.html" target="main"> <i class="layui-icon layui-icon-home"></i>首页</a>
                     </li>
                     <li class="layui-nav-item">
@@ -64,14 +64,14 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <div style="padding: 15px;">
+            <div style="padding: 15px; height: 100%;">
                 <iframe src="./moduls/home.html" frameborder="0" name="main"></iframe>
             </div>
         </div>
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            底部固定区域
+            Copyright © 2014-2020 1024小神 ｜豫ICP备20012817号-1
         </div>
     </div>
     <script src="./layui/layui.js"></script>

@@ -1,0 +1,40 @@
+.total {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    /* background-color: pink; */
+}
+
+.total div {
+    flex: 1;
+    /* background-color: blue; */
+}
+
+.total div:nth-child(-n + 3) {
+    margin-right: 10px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 400px;
+    /* background-color: grey; */
+}
+
+.charts .left {
+    flex: 2;
+    margin-right: 10px;
+    /* background-color: orange; */
+}
+
+.charts .right {
+    flex: 1;
+    /* background-color: pink; */
+}
+
+.visit {
+    margin-top: 10px;
+    height: 500px;
+    /* background-color: purple; */
+}

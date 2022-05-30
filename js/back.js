@@ -6,4 +6,10 @@ $(function () {
             $(this).parent().find("dl").children().eq(0).children()[0].click();
         }
     })
+
+    // 退出登录
+    $(".quit").on("click", function (e) {
+        localStorage.removeItem("token");
+        location.href = "/login.html";
+    })
 })

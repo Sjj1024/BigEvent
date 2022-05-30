@@ -6,10 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jqueryBig.js"></script>
+    <script src="../js/baseAPI.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 
 <body>
-    我是首页
+    <div class="box">
+        <div class="total">
+            <div class="numbar layui-panel" id="number">文章总数</div>
+            <div class="new layui-panel" id="new">日新增文章数</div>
+            <div class="commit layui-panel" id="commit">评论总数</div>
+            <div class="add layui-panel" id="add">日新增评论数</div>
+        </div>
+        <div class="charts">
+            <div class="left layui-panel" id="left">月新增文章数</div>
+            <div class="right layui-panel" id="right">分类文章数量比</div>
+        </div>
+        <div class="visit layui-panel" id="visit">文章访问量</div>
+    </div>
 </body>
 
 </html>
