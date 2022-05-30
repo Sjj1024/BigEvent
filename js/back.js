@@ -12,4 +12,27 @@ $(function () {
         localStorage.removeItem("token");
         location.href = "/login.html";
     })
+
+    function getSome() {
+        console.log("getSome");
+    }
 })
+
+// 获取用户信息并渲染
+function getUserInfo() {
+    console.log(window);
+    var settings = {
+        "url": "/my/userinfo",
+        "method": "GET",
+        "timeout": 0,
+    };
+    $.ajax(settings).done(function (response) {
+        if (response.status === 0) {
+            var userName = response.data.nickname;
+            $(".user-name").html(userName);
+        } else {
+            layer.msg(response.message);
+        }
+    });
+}
+getUserInfo();
