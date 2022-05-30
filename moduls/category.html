@@ -6,10 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jqueryBig.js"></script>
+    <script src="../js/baseAPI.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/category.js"></script>
+    <link rel="stylesheet" href="../css/category.css">
 </head>
 
 <body>
-    文章类别
+    <div class="layui-card">
+        <div class="layui-card-header">文章类别</div>
+        <div class="layui-card-body">
+            <table class="layui-table" id="category">
+                <colgroup>
+                    <col width="150">
+                    <col width="150">
+                    <col width="50">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>分类名称</th>
+                        <th>分类别名</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>音乐</td>
+                        <td>music</td>
+                        <td>
+                            <button type="button" class="layui-btn layui-btn-normal layui-btn-sm">编辑</button>
+                            <button type="button" class="layui-btn layui-btn-danger layui-btn-sm">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>首页</td>
+                        <td>index</td>
+                        <td>
+                            <button type="button" class="layui-btn layui-btn-normal layui-btn-sm">编辑</button>
+                            <button type="button" class="layui-btn layui-btn-danger layui-btn-sm">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
