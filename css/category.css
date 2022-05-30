@@ -3,6 +3,18 @@
 }
 
 .layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 600;
     font-size: 18px;
+}
+
+.layui-form {
+    padding: 20px;
+    width: 80%;
+}
+
+.layui-form .layui-input {
+    width: 100%;
 }

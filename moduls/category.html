@@ -10,13 +10,17 @@
     <script src="../js/jqueryBig.js"></script>
     <script src="../js/baseAPI.js"></script>
     <script src="../layui/layui.js"></script>
+    <script src="../js/template.js"></script>
     <script src="../js/category.js"></script>
     <link rel="stylesheet" href="../css/category.css">
 </head>
 
 <body>
     <div class="layui-card">
-        <div class="layui-card-header">文章类别</div>
+        <div class="layui-card-header">
+            <span>文章类别</span>
+            <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="add-cate">添加分类</button>
+        </div>
         <div class="layui-card-body">
             <table class="layui-table" id="category">
                 <colgroup>
@@ -52,6 +56,42 @@
             </table>
         </div>
     </div>
+    <script id="tpl" type="text/html">
+        {{each data}}
+        <tr>
+            <td>{{$value.name}}</td>
+            <td>{{$value.alias}}</td>
+            <td>
+                <button type="button" class="layui-btn layui-btn-normal layui-btn-sm">编辑</button>
+                <button type="button" class="layui-btn layui-btn-danger layui-btn-sm">删除</button>
+            </td>
+        </tr>
+        {{/each}}
+    </script>
+    <script type="text/html" id="addCategory">
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="category" required lay-verify="required" placeholder="请输入分类名称"
+                        autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类别名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="alias" required lay-verify="required" placeholder="请输入分类别名"
+                        autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn submit-cate" lay-submit lay-filter="formDemo">提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </script>
 </body>
 
 </html>
