@@ -3,7 +3,8 @@
 jq + layui + echarts
 
 ## 登陆注册页面
-支持注册和登录，用的黑马的接口
+支持注册和登录，用的黑马的接口  
+已有账号:xiaoshen  密码:xiaoshen 
 ![](images/login.jpg)
 ![](images/rigist.jpg)
 
